@@ -1,6 +1,6 @@
 ## 新建项目，构建工程目录
 * config：全局配置
-* system：全局的工具和依赖功能
+* common：全局的工具和依赖功能
 * auth：权限认证模块
 * module：业务模块
     - persitence：持久层
