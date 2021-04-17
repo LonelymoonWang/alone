@@ -13,11 +13,11 @@ import org.springframework.data.redis.connection.RedisConnectionFactory;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.data.redis.serializer.StringRedisSerializer;
 
-/**
- * redis配置
- * 
- * @author ruoyi
- */
+/**********************************
+ * @Author: WSIR
+ * @Date: 2021/4/17 00:04
+ * @Description: redis配置 来源：【若依】
+ **********************************/
 @Configuration
 @EnableCaching
 public class RedisConfig extends CachingConfigurerSupport

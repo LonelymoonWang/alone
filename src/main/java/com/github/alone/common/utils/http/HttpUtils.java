@@ -12,11 +12,11 @@ import java.net.URL;
 import java.net.URLConnection;
 import java.security.cert.X509Certificate;
 
-/**
- * 通用http发送方法
- * 
- * @author ruoyi
- */
+/**********************************
+ * @Author: WSIR
+ * @Date: 2021/4/17 00:04
+ * @Description: 通用http发送方法
+ **********************************/
 public class HttpUtils
 {
     private static final Logger log = LoggerFactory.getLogger(HttpUtils.class);

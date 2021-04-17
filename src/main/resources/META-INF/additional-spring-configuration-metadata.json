@@ -1,0 +1,18 @@
+{
+  "properties": [
+    {
+      "name": "token.header",
+      "type": "java.lang.String",
+      "description": "Description for token.header."
+    },
+    {
+      "name": "token.secret",
+      "type": "java.lang.String",
+      "description": "Description for token.secret."
+    },
+    {
+      "name": "token.expireTime",
+      "type": "java.lang.String",
+      "description": "Description for token.expireTime."
+    }
+  ] }

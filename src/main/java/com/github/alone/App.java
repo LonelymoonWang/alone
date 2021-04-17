@@ -1,5 +1,6 @@
 package com.github.alone;
 
+import org.mybatis.spring.annotation.MapperScan;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.SpringApplication;
@@ -11,10 +12,11 @@ import org.springframework.web.bind.annotation.ResponseBody;
 /**********************************
  * @Author: WSIR
  * @Date: 2021/4/16 18:30
- * @Description:
+ * @Description: 启动类
  **********************************/
 @SpringBootApplication
 @Controller
+@MapperScan("com.github.alone.module.*.*.dao")
 public class App {
 
     public static final Logger logger = LoggerFactory.getLogger(App.class);
@@ -23,15 +25,7 @@ public class App {
         SpringApplication.run(App.class,args);
     }
 
-    /**
-     *
-     * 功能描述: 测试 Web
-     *
-     * @param:
-     * @return: "这是主页"
-     * @Author: WSIR
-     * @date: 2021/4/16 18:44
-     */
+    /**测试 Web**/
     @RequestMapping("/")
     @ResponseBody
     public String toIndex(){

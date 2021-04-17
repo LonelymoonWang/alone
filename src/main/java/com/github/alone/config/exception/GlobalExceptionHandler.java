@@ -19,11 +19,11 @@ import java.util.Objects;
 
 import static com.github.alone.common.core.domain.ResultInfo.error;
 
-/**
- * 全局异常处理器
- * 
- * @author ruoyi
- */
+/**********************************
+ * @Author: WSIR
+ * @Date: 2021/4/17 00:04
+ * @Description: 全局异常处理器
+ **********************************/
 @RestControllerAdvice
 public class GlobalExceptionHandler
 {
