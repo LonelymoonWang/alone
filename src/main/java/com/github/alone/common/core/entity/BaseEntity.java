@@ -6,8 +6,6 @@ import lombok.Data;
 
 import java.io.Serializable;
 import java.util.Date;
-import java.util.HashMap;
-import java.util.Map;
 
 /**********************************
  * @Author: WSIR
@@ -26,5 +24,6 @@ public class BaseEntity implements Serializable {
     private Date updateTime;
     @TableField(value = "remark")
     private String remark;
-    private Map<String, Object> params = new HashMap<>();
+    //@TableField(exist = false)
+    //private Map<String, Object> params = new HashMap<>();
 }

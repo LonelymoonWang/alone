@@ -57,8 +57,8 @@ mybatis-plus:
       table-underline: true
       #逻辑删除配置
       #字段策略 0:"忽略判断",1:"非 NULL 判断"),2:"非空判断"
-      logic-delete-value: 0
-      logic-not-delete-value: 1
+      logic-delete-value: 1
+      logic-not-delete-value: 0
     banner: false
   configuration:
     map-underscore-to-camel-case: true
