@@ -1,10 +1,11 @@
 package com.github.alone;
 
-import org.mybatis.spring.annotation.MapperScan;
+import com.github.alone.config.bean.SnowflakeBean;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.Bean;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -16,7 +17,6 @@ import org.springframework.web.bind.annotation.ResponseBody;
  **********************************/
 @SpringBootApplication
 @Controller
-@MapperScan("com.github.alone.module.*.*.dao")
 public class App {
 
     public static final Logger logger = LoggerFactory.getLogger(App.class);

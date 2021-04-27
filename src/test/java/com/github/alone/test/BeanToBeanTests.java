@@ -1,8 +1,8 @@
 package com.github.alone.test;
 
 import cn.hutool.core.bean.BeanUtil;
-import com.github.alone.module.sys.user.domain.SysUserBody;
-import com.github.alone.module.sys.user.entity.UserEntity;
+import com.github.alone.module.sys.vo.in.SysUserBody;
+import com.github.alone.module.sys.pojo.UserEntity;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.boot.test.context.SpringBootTest;

@@ -11,7 +11,7 @@ import java.util.Map;
  **********************************/
 @Data
 public class PageBean {
-    private Long pageIndex = 1L;
-    private Long pageSize = 10L;
+    private int pageIndex = 1;
+    private int pageSize = 10;
     private Map<String,Object> params;
 }

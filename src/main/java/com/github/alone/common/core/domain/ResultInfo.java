@@ -1,10 +1,11 @@
 package com.github.alone.common.core.domain;
 
 import cn.hutool.http.HttpStatus;
-import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.google.common.collect.Maps;
 import org.apache.commons.collections4.MapUtils;
 
+import javax.validation.constraints.NotNull;
+import java.util.List;
 import java.util.Map;
 
 /**********************************
@@ -43,19 +44,10 @@ public class ResultInfo {
     public static Map<String, Object> success(Map<String, Object> respData){
         return success(SUCCESS_DESC,respData);
     }
-    public static Map<String, Object> success(IPage<?> list,Map<String, Object> params){
-        params.put("rows",list.getRecords());
-        params.put("total",list.getTotal());
-        params.put("current",list.getCurrent());
-        params.put("size",list.getSize());
-        return success(SUCCESS_DESC,params);
-    }
-    public static Map<String, Object> success(IPage<?> list){
-        Map<String, Object> respData = Maps.newHashMap();
-        respData.put("rows",list.getRecords());
-        respData.put("total",list.getTotal());
-        respData.put("current",list.getCurrent());
-        respData.put("size",list.getSize());
+    public static Map<String, Object> success(PageResInfo pageResInfo, Map<String,
+            Object> respData){
+        respData.put("rows",pageResInfo.getRows());
+        respData.put("total",pageResInfo.getTotal());
         return success(SUCCESS_DESC,respData);
     }
     public static Map<String, Object> success(){
